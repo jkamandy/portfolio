@@ -2,11 +2,47 @@ html {
     background:#282c34;
 }
 
+.header-container {
+    margin: 50px;
+}
+
+.whitespace1 {
+    height: 100px;
+}
+
+.name-container {
+    justify-content: center;
+    display: flex;
+}
+
+
 .my-name {
-    font-size: x-large;
+    font-size: xxx-large;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text1 {
+    text-align: left;
+    color: white;
+    height: 10px;
+    font-size: 22px;
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+
+}
+
+h1 {
+    margin-block-start: 0.27em;
+}
+
+.item1 {
+    text-align: right;
 }
 
 .my-name,
+.name1,
+.item1,
 .body {
     color:#abb2bf;
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
