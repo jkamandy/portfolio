@@ -2,6 +2,10 @@ html {
     background:#282c34;
 }
 
+.my-name {
+    font-size: x-large;
+}
+
 .my-name,
 .body {
     color:#abb2bf;
