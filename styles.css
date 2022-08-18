@@ -1,26 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
 html {
     background:#282c34;
 }
 
 .header-container {
-    margin: 50px;
+    overflow: hidden;
+    background-color: #282c34;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    transition: top 0.3s;
 }
 
-.whitespace1 {
-    height: 100px;
+.header-container a {
+    padding: 25px;
+    color: #abb2bf;
+    font-size: 18px;
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+
 }
 
-.whitespace2 {
-    height: 500px;
+.resume-nav {
+    padding-right: 20px;
 }
+
+.header-container a:hover {
+    color: #daaf72;
+}
+
+
 
 .name-container {
-    justify-content: center;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    top: 50%;
+    text-align: center;
+    min-height: 100vh;
 }
 
+.sidenav {
+    height: 150px;
+    width: 70px;
+    position: fixed;
+    bottom: 20px;
+    padding-left: 20px;
+    background-color: #282c34;
+    overflow-x: hidden;
+}
+
+.sidenav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #abb2bf;
+    display: flex;
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+
+
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.about-me-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 834.45px;
+}
+
+
+.whitespace1 {
+    height: 300px;
+}
 
 .my-name {
     font-size: xxx-large;
@@ -30,18 +96,31 @@ html {
 }
 
 .text1,
-.text2 {
+.text2,
+.text3 {
     text-align: left;
     color: #daaf72;
-    height: 10px;
     font-size: 22px;
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+}
 
+.text3 {
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.text4 {
+    text-align: left;
+    color: #abb2bf;
+    font-size: 18px;
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    line-height: 1.5;
 }
 
 h1 {
     margin-block-start: 0.27em;
     margin-block-end: 0.27em;
+    text-align: left;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
