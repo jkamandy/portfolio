@@ -23,13 +23,15 @@ html {
     padding: 25px;
     color: #abb2bf;
     font-size: 18px;
-    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     text-decoration: none;
 }
 
-.resume-nav {
-    padding-right: 20px;
+.resume-nav,
+.contact-nav {
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+
 }
+
 
 .header-container a:hover {
     color: #daaf72;
@@ -93,6 +95,25 @@ html {
     min-height: 100vh;
 }
 
+.links-container {
+    color: #abb2bf;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+
+}
+
+.links-container a {
+    font-size: 22px;
+    color: #abb2bf;
+}
+
+.links-container a:hover {
+    color: #daaf72;
+}
+
+
 .about-me-header,
 .contact-me {
     display: flex;
@@ -116,11 +137,30 @@ html {
 .text1,
 .text2,
 .text3,
-.text6 {
+.text6,
+.send-email {
     text-align: left;
     color: #daaf72;
     font-size: 22px;
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+}
+
+.send-email a {
+    text-align: left;
+    color: #abb2bf;
+    font-size: 22px;
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    text-decoration: none;
+}
+
+.send-email button {
+    background:#282c34;
+    box-sizing: unset;
+}
+
+
+.send-email a:hover {
+    color: #daaf72;
 }
 
 .text3,
