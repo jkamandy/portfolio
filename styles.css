@@ -37,7 +37,13 @@ html {
     color: #daaf72;
 }
 
+.about-me-header a:hover {
+    color: #daaf72;
+}
 
+.about-me-header a {
+    color: #abb2bf;
+}
 
 .name-container {
     display: flex;
@@ -173,7 +179,8 @@ html {
 .text5,
 .text8,
 .text12,
-.text7 {
+.text7,
+.text13 {
     text-align: left;
     color: #abb2bf;
     font-size: 18px;
