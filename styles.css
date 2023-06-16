@@ -129,7 +129,7 @@ h1 span:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 1vw;
+    /* font-size: 1vw; */
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 
 }

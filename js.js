@@ -31,3 +31,29 @@ spans.forEach((span, index) => {
     });
   });
 });
+
+
+  // Function to check if an element is in the viewport
+  function isInViewport(element) {
+    var rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  // Function to handle scroll event
+  function handleScroll() {
+    var items = document.getElementsByClassName('my-name');
+
+    for (var i = 0; i < items.length; i++) {
+      if (isInViewport(items[i])) {
+        items[i].style.opacity = 0; // Make the item visible
+      }
+    }
+  }
+
+  // Attach scroll event listener to the container element
+  document.getElementById('my-name-container').addEventListener('scroll', handleScroll);
