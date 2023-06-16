@@ -1,12 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 
 html {
-    background:#282c34;
+    background: rgb(13, 24, 33);
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-container {
     overflow: hidden;
-    background-color: #282c34;
+    /* background-color: #282c34; */
+    background-color: rgb(13, 24, 33);
     position: fixed;
     top: 0;
     left: 0;
@@ -17,6 +26,7 @@ html {
     height: 70px;
     transition: top 0.3s;
     box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
+    z-index: 1;
 }
 
 .header-container a {
@@ -31,6 +41,16 @@ html {
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 
 }
+
+h1 span {
+    word-spacing: 4vw;
+    letter-spacing: -2vw;
+}
+
+h1 span:hover{
+    color: #daaf72;
+}
+
 
 
 .header-container a:hover {
@@ -51,8 +71,10 @@ html {
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 100vh;
-    min-width: fit-content;
+    /* max-width: 90vw; */
+    min-height: 90vh;
+    width: 70vw;
+    /* min-width: fit-content; */
 }
 
 .sidenav {
@@ -102,16 +124,18 @@ html {
 }
 
 .links-container {
+    min-height: 5vh;
     color: #abb2bf;
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: 1vw;
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 
 }
 
 .links-container a {
-    font-size: 22px;
+    font-size: 1vh;
     color: #abb2bf;
 }
 
@@ -147,7 +171,7 @@ html {
 .send-email {
     text-align: left;
     color: #daaf72;
-    font-size: 22px;
+    font-size: 4vw;
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 }
 
@@ -188,11 +212,19 @@ html {
     line-height: 1.5;
 }
 
-h1 {
-    margin-block-start: 0.27em;
+h1,
+.header-third {
+    /* letter-spacing: 0.5vw; */
+
+    color: #abb2bf;
+    /* color:rgb(136, 149, 141); */
+    margin-block-start: 0em;
     margin-block-end: 0.27em;
+
     text-align: left;
-    font-size: 96px;
+    /* font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif; */
+
+    font-size: 9vw;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -208,4 +240,49 @@ h1 {
     color:#abb2bf;
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 }
+
+.footer-container {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    min-width: 30vw;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  .header-first,
+  .header-second,
+  .header-third,
+  h1 {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+  .header-first {
+    animation-delay: 0.5s;
+  }
+  .header-second {
+    animation-delay: 1s;
+  }
+
+  h1,
+  .header-third {
+    animation-delay: 2s;
+  }
+
+  @keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(20, end), fadeIn 1s ease-in-out 2s forwards;
+}
+
 
